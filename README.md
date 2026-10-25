@@ -1,37 +1,37 @@
 # Maize Disease Classification
 
-Maize Disease Classification is a convolutional neural network (CNN) project for classifying maize leaf images. The project report describes the model as part of a mobile application workflow intended to help identify maize diseases from images.
+A convolutional neural network (CNN) classifies maize leaf images in the Maize Disease Classification mobile application.
 
 ## Classification categories
 
-The model classifies images into four categories:
+The CNN identifies four categories:
 
 - Healthy
 - Cercospora
 - Common Rust
 - Northern Leaf Blight
 
-## Reported workflow
+## Workflow
 
-The workflow described in the report accepts an image captured with a device camera or selected from the image gallery, preprocesses it, runs model inference, and presents the predicted category with its probability. The report describes TensorFlow Lite as the framework for integrating the CNN into the mobile application.
+Capture a maize leaf image with the device camera or select one from the gallery. The application preprocesses the image, classifies it with the CNN, and displays the predicted category and probability. TensorFlow Lite runs the model in the mobile application.
 
 ![Maize disease classification data flow](assets/data-flow.png)
 
-## Model result
+## Model performance
 
-The report states that the model achieved 88% accuracy. Its training and validation accuracy graph is shown below.
+The CNN achieved 88% classification accuracy. The graph shows training and validation accuracy across epochs.
 
 ![Training and validation accuracy by epoch](assets/training-validation-accuracy.png)
 
-## Sample leaf images
+## Leaf image examples
 
-The following examples are from the report’s data sample appendix.
+The images below show examples from each classification category.
 
 | Healthy | Cercospora | Common Rust | Northern Leaf Blight |
 | --- | --- | --- | --- |
 | ![Healthy maize leaf](assets/healthy.jpg) | ![Cercospora on a maize leaf](assets/cercospora.jpg) | ![Common Rust on a maize leaf](assets/common-rust.jpg) | ![Northern Leaf Blight on a maize leaf](assets/northern-leaf-blight.jpg) |
 
-## Repository files
+## Project files
 
 - `CNN/cnn.py` — CNN model and training script.
 - `CNN/mdd.keras` — saved Keras model.
